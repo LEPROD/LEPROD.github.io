@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+a {
+    color: #F18441;
+    text-decoration: underline #F18441;
+}
+
+body {
+    background: #1C1C1B;
+    color: #dedbd2;
+}
+
+footer {
+    background: #f37721;
+    display: flex;
+    height: 6em;
+    text-align: center;
+    flex-direction: column;
+    color: #2D2D2B;
+}
+
+/*Fait disparaitre le texte quand on commence à écrire dans le formulare*/
+input:valid ~ label:not(.icon-burger), textarea:valid ~ label:not(.icon-burger) {
+    visibility: hidden;
+}
+
+nav {
+    z-index: 10; /*Sur mobile affiche la page de navigation devant tout le reste*/
+    position: fixed; /*Maintien la navbar bien collée à gauche et à droite*/
+    left: 0; /*Le logo est fixé à gauche*/
+    right: 0; /*Les boutons sont fixés à droite*/
+    top: 0; /*La navbar est tout en haut de l'écran*/
+    padding: 0 5%;
+    height: 5em;
+    background-color: #2D2D2B;
+}
+
+nav .logo {
+    float: left;
+    margin-top: 1em;
+}
+
+nav .links {
+    float: right; /*On garde les boutons serrés sur la droite*/
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+/*Retire le superflux visuel*/
+nav .links li {
+    list-style: none;
+}
+
+/*Correspond au boutons de la barre de navigation*/
+nav .links a {
+    padding: 2em; /*Maintiens un espace entre chaque bouton*/
+    font-size: 16px;
+    font-weight: bold;
+    color: #dedbd2;
+    text-decoration: none;
+}
+
+/* impact visuel au survol*/
+nav .links a:hover {
+    background: #dedbd2;
+    color: #1C1C1B;
+}
+
+/*Tous les elements à l'interieur des articles*/
+article * {
+    font-size: 30px;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+article {
+    margin-bottom: 5em;
+    margin-right: 30%;
+}
+
+/*Utilisé uniquement par les grands titres*/
+h1 {
+    color: #dedbd2;
+    font-size: 300%;
+}
+
+/*Bouton de changement de style*/
+button {
+    height: 5em;
+    width: 5em;
+}
+
+input, textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    background-color: #2d2d2d;
+    color: white; /*Couleur du texte dans le bouton Envoyer*/
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+/*Uniquement pour le bloc de texte "Vos impressions"*/
+textarea {
+    height: 15em;
+    resize: none;
+
+
+}
+
+/*Badge LinkedIn*/
+.LI-profile-badge {
+    margin-right: 1em;
+    margin-left: 2em;
+}
+
+/*Maintiens le titre de la page en dessous du header*/
+.header-menu {
+    height: 5em;
+}
+
+.cover {
+    /*Centrage du texte*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(60deg, #34A6BA, #F18441);
+    width: 100%;
+    height: 10em;
+    margin-bottom: 3em;
+}
+
+.input-pannel {
+    float: left;
+    width: 15em;
+    margin: 1rem 0;
+    position: relative;
+
+}
+
+/*Indices du formulaire*/
+.input-pannel label {
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute; /*Permet d'avoir le texte dans l'emplacement*/
+    top: 10px;
+    left: 0;
+}
+
+.input-pannel.wide {
+    width: 100%;
+}
+
+
+.submit-btn {
+    margin-bottom: 2em;
+    border-radius: 60px;
+    background-color: #F18441;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/*Autre bouton de changement de style*/
+#style {
+    display: none;
+}
+
+#logo {
+    width: 5em;
+}
+
+#play-store-button {
+    margin-left: 0;
+}
+
+#les-prods {
+    margin: 1em 1em 0 2em;
+    width: 75%;
+}
+
+#profile-image {
+    width: 30%;
+}
+
+.input-container {
+    width: 650px;
+    margin: 20px auto 20px auto;
+}
+
+/*Correspond au visuel de l'icon-burger*/
+.line {
+    visibility: hidden;
+}
+
+/*Pour le badge LinkedIn*/
+aside {
+    margin-left: 2em;
+    float: left;
+    box-shadow: inset 5px 0 5px -5px #34A6BA;
+    font-style: italic;
+    color: #34A6BA;
+}
+
+#profile-image {
+    display: none;
+}
