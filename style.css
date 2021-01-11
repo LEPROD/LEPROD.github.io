@@ -18,16 +18,6 @@ body {
     align-items: center;
 }
 
-footer {
-    background: #f37721;
-    display: flex;
-    height: 6em;
-    text-align: center;
-    flex-direction: column;
-    color: #2D2D2B;
-}
-
-
 nav {
     z-index: 10; /*Sur mobile affiche la page de navigation devant tout le reste*/
     position: fixed; /*Maintien la navbar bien collée à gauche et à droite*/
