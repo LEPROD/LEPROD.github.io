@@ -22,10 +22,6 @@ footer {
     color: #2D2D2B;
 }
 
-/*Fait disparaitre le texte quand on commence à écrire dans le formulare*/
-input:valid ~ label:not(.icon-burger), textarea:valid ~ label:not(.icon-burger) {
-    visibility: hidden;
-}
 
 nav {
     z-index: 10; /*Sur mobile affiche la page de navigation devant tout le reste*/
@@ -88,128 +84,7 @@ h1 {
     font-size: 300%;
 }
 
-/*Bouton de changement de style*/
-button {
-    height: 5em;
-    width: 5em;
-}
-
-input, textarea {
-    padding: 30px;
-    border: 0;
-    width: 100%;
-    background-color: #2d2d2d;
-    color: white; /*Couleur du texte dans le bouton Envoyer*/
-    border-radius: 4px;
-    font-size: 20px;
-}
-
-/*Uniquement pour le bloc de texte "Vos impressions"*/
-textarea {
-    height: 15em;
-    resize: none;
-
-
-}
-
-/*Badge LinkedIn*/
-.LI-profile-badge {
-    margin-right: 1em;
-    margin-left: 2em;
-}
-
-/*Maintiens le titre de la page en dessous du header*/
-.header-menu {
-    height: 5em;
-}
-
-.cover {
-    /*Centrage du texte*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(60deg, #34A6BA, #F18441);
-    width: 100%;
-    height: 10em;
-    margin-bottom: 3em;
-}
-
-.input-pannel {
-    float: left;
-    width: 15em;
-    margin: 1rem 0;
-    position: relative;
-
-}
-
-/*Indices du formulaire*/
-.input-pannel label {
-    color: #999;
-    padding: 1.3rem 30px 1rem 30px;
-    position: absolute; /*Permet d'avoir le texte dans l'emplacement*/
-    top: 10px;
-    left: 0;
-}
-
-.input-pannel.wide {
-    width: 100%;
-}
-
-
-.submit-btn {
-    margin-bottom: 2em;
-    border-radius: 60px;
-    background-color: #F18441;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-
-/*Autre bouton de changement de style*/
-#style {
-    display: none;
-}
 
 #logo {
     width: 5em;
-}
-
-#play-store-button {
-    margin-left: 0;
-}
-
-#les-prods {
-    margin: 1em 1em 0 2em;
-    width: 75%;
-}
-
-#profile-image {
-    width: 30%;
-}
-
-.input-container {
-    width: 650px;
-    margin: 20px auto 20px auto;
-}
-
-.row{
-    display: flex;
-}
-
-/*Correspond au visuel de l'icon-burger*/
-.line {
-    visibility: hidden;
-}
-
-/*Pour le badge LinkedIn*/
-aside {
-    margin-left: 2em;
-    float: left;
-    box-shadow: inset 5px 0 5px -5px #34A6BA;
-    font-style: italic;
-    color: #34A6BA;
-}
-
-#profile-image {
-    display: none;
 }
